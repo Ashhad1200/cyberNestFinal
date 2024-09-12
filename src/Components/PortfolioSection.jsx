@@ -45,7 +45,7 @@ const PortfolioSection = () => {
     {/* Section Title */}
     <div className="text-center mb-12">
       <h2 className="text-4xl font-bold">Portfolio</h2>
-      <p className="text-lg text-gray-400 max-w-2xl mx-auto mt-4">
+      <p className="text-lg text-gray-400 max-w-2xl  mt-4 lg:mx-auto mx-3">
         We are proud of our work, and we are always looking for new challenges. Take a look at some of our recent portfolio:
       </p>
     </div>

@@ -11,7 +11,7 @@ const CTASection = () => {
 
   return (
     <section className="py-16 my-28">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
+      <div className="container  flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
         {/* Form Section */}
         <div className="lg:w-2/3 flex justify-center" data-unload="fade-left">
           <div className="bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-md">
@@ -69,7 +69,7 @@ const CTASection = () => {
         </div>
 
         {/* Text Section */}
-        <div className="lg:w-1/2 text-white" data-unload="fade-right">
+        <div className="lg:w-1/2 text-white lg:mx-0 mx-5" data-unload="fade-right">
           <h2 className="text-4xl font-bold mb-4">
             Lets discuss your next creative project.
           </h2>

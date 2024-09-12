@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,22 +52,22 @@ const NavBar = () => {
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
             >
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   onClick={handleLinkClick}
                   className="text-white hover:text-blue-500 font-semibold block lg:inline-block py-2 lg:py-0"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   onClick={handleLinkClick}
                   className="text-white hover:text-blue-500 font-semibold block lg:inline-block py-2 lg:py-0"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a

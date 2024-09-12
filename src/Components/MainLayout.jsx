@@ -8,12 +8,14 @@ import TestimonialsSection from "./TestimonialsSection";
 const MainLayout = () => {
   return (
     <>
-      <HeroSection />
-      <AboutUsSection />
-      <ServicesSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <CTASection />
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <HeroSection />
+        <AboutUsSection />
+        <ServicesSection />
+        <PortfolioSection />
+        <TestimonialsSection />
+        <CTASection />
+      </div>
     </>
   );
 };
