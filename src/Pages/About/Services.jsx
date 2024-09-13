@@ -32,7 +32,7 @@ const Services = () => {
     <>
       <section className="relative text-white">
         {/* Content Section */}
-        <div className="container lg:mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 mx-6">
+        <div className="container lg:w-4/5 lg:mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 mx-6">
           {/* Left Column */}
           <div
             className="space-y-6 flex flex-col justify-between "

@@ -15,27 +15,44 @@ const NavBar = () => {
         <div className="flex justify-between items-center">
           <div className="text-lg font-bold text-white">Cyber Nest</div>
 
-          {/* Hamburger Icon for Mobile */}
+          {/* Hamburger/Close Icon for Mobile */}
           <button
             className="block lg:hidden text-white hover:text-blue-500 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
             aria-expanded={isOpen}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            {isOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
           </button>
 
           {/* Navbar Links */}
@@ -70,13 +87,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services"
                   onClick={handleLinkClick}
                   className="text-white hover:text-blue-500 font-semibold block lg:inline-block py-2 lg:py-0"
                 >
-                  Services
-                </a>
+                  Our Services
+                </Link>
               </li>
               <li>
                 <a

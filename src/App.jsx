@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import MainLayout from './Components/MainLayout';
 import Navbar from './Components/Navbar';
 import AboutPage from './Pages/About';
+import ServicesPage from './Pages/Services';
 // Import other page components here if needed, like Contact
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MainLayout />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </main>

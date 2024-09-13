@@ -8,7 +8,7 @@ import TestimonialsSection from "./TestimonialsSection";
 const MainLayout = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center min-h-screen lg:mx-40">
         <HeroSection />
         <AboutUsSection />
         <ServicesSection />
