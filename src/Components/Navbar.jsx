@@ -96,13 +96,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   onClick={handleLinkClick}
                   className="text-white hover:text-blue-500 font-semibold block lg:inline-block py-2 lg:py-0"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

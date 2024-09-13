@@ -61,18 +61,6 @@ const Services = () => {
               imaginations and leave audiences begging for more. At Bringer, we
               don't just build brands, we build movements.
             </p>
-            <p className="text-gray-400">
-              We are a team of passionate and experienced designers, developers,
-              and marketers who specialize in helping businesses of all sizes
-              achieve their goals. We believe that creativity is the key to
-              success, and we are committed to helping our clients unleash their
-              full potential.
-            </p>
-            <p className="text-gray-400">
-              We believe in the power of creativity. We help creative
-              professionals create a strong online presence that showcases their
-              work and tells their story.
-            </p>
           </div>
         </div>
 

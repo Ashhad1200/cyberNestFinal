@@ -18,10 +18,14 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="container">
+        <div className="divide-white"></div>
         <HeroSectionAbout />
+        <div className="divide-white"></div>
         {/* <MeetTheTeam /> */}
         <Story />
+        <div className="divide-white"></div>
         <Services />
+        <div className="divide-white"></div>
         <FeaturesSection />
       </div>
     </div>
