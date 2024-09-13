@@ -1,6 +1,6 @@
 import HeroSectionServices from "./HeroSectionServices";
 import WhatMakesUsBest from "./MakeUsBest";
-import Services from "./services";
+import Services from "./Services";
 
 const ServicesPage = () => {
   return (
