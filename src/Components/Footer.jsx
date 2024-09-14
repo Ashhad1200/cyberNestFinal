@@ -5,6 +5,7 @@ import {
   FaTiktok,
   FaPatreon,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,41 +22,41 @@ const Footer = () => {
             </p>
             {/* Social Icons with animation */}
             <div className="mt-5 flex space-x-4">
-              <a
-                href="#"
+              <Link
+                to="#"
                 aria-label="Visit us on Facebook"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaFacebookF size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 aria-label="Visit us on Instagram"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaInstagram size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 aria-label="Visit us on Twitter"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaTwitter size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 aria-label="Visit us on TikTok"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaTiktok size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 aria-label="Visit us on Patreon"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaPatreon size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -65,44 +66,44 @@ const Footer = () => {
               <h3 className="font-semibold">Services</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Branding
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Marketing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Graphic Design
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Web Design
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Content Creation
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -111,36 +112,36 @@ const Footer = () => {
               <h3 className="font-semibold">About Us</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Our Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Testimonials
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Get in Touch
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -149,36 +150,36 @@ const Footer = () => {
               <h3 className="font-semibold">Resources</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Help Center
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

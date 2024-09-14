@@ -43,7 +43,6 @@ const CTASection = () => {
               </div>
               <div>
                 <label
-                  htmlFor="message"
                   className="block text-gray-300 text-sm"
                 >
                   Your Message

@@ -1,5 +1,4 @@
 import { BsArrowUpRight } from "react-icons/bs";
-import { motion } from "framer-motion";
 
 const portfolioItems = [
   {
@@ -54,12 +53,9 @@ const PortfolioSection = () => {
       {/* Portfolio Grid */}
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {portfolioItems.map((item, index) => (
-          <motion.div
+          <div
             key={index}
             className="relative group bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }} // Stagger animation
           >
             {/* Image */}
             <img
@@ -81,22 +77,19 @@ const PortfolioSection = () => {
             >
               <BsArrowUpRight size={20} />
             </a>
-          </motion.div>
+          </div>
         ))}
       </div>
 
       {/* Explore All Works Button */}
       <div className="text-center mt-12">
-        <motion.a
+        <a
           href="#"
           className="inline-flex items-center text-blue-500 hover:underline"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
         >
           Explore All Works
           <BsArrowUpRight size={18} className="ml-2" />
-        </motion.a>
+        </a>
       </div>
     </section>
   );
