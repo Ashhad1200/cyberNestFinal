@@ -1,4 +1,3 @@
-
 import ServicesSection from "../../Components/ServicesSection";
 
 const Services = () => {
@@ -37,9 +36,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-
-    <ServicesSection/>
-
+        <ServicesSection />
       </section>
     </>
   );

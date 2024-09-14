@@ -1,5 +1,4 @@
 import { BsArrowUpRight } from "react-icons/bs";
-import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   const services = [
@@ -37,12 +36,9 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 items-center w-10/12">
         <ul className="space-y-5">
           {services.map((service, index) => (
-            <motion.li
+            <li
               key={index}
               className="flex justify-between items-center bg-gray-800 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animation
             >
               <div className="w-2/5">
                 <h4 className="text-2xl font-semibold mb-4">
@@ -59,25 +55,22 @@ const ServicesSection = () => {
                   <BsArrowUpRight size={24} />
                 </a>
               </div>
-            </motion.li>
+            </li>
           ))}
         </ul>
       </div>
 
       {/* Explore All Services Button */}
       <div className="text-center mt-16">
-        <motion.a
+        <a
           href="services.html"
           className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-flex items-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
         >
           Explore All Services
           <BsArrowUpRight size={20} className="ml-2" />
-        </motion.a>
+        </a>
       </div>
-      </>
+    </>
   );
 };
 

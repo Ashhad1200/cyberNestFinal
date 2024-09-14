@@ -1,5 +1,4 @@
 import { BsArrowRight } from "react-icons/bs";
-import { motion } from "framer-motion";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -27,14 +26,10 @@ const TestimonialsSection = () => {
     <section className="text-white py-16 container mx-auto px-4 items-center w-10/12">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold" data-appear="fade-up">
+        <h2 className="text-4xl font-bold">
           What Our Clients Say
         </h2>
-        <p
-          className="text-lg text-gray-400 max-w-2xl mx-auto mt-4"
-          data-appear="fade-up"
-          data-delay="100"
-        >
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto mt-4">
           Read what our clients have to say about our work.
         </p>
       </div>
@@ -44,12 +39,9 @@ const TestimonialsSection = () => {
         {/* Testimonials */}
         <div>
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <div
               key={index}
               className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
             >
               <p className="text-lg italic mb-4">{testimonial.text}</p>
               <div className="flex justify-between items-center">
@@ -96,34 +88,25 @@ const TestimonialsSection = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
           {/* Read all testimonials link */}
           <div className="text-right mt-4">
-            <motion.a
+            <a
               href="/testimonials"
               className="text-blue-500 hover:underline inline-flex items-center"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
             >
               Read all testimonials <BsArrowRight className="ml-2" size={18} />
-            </motion.a>
+            </a>
           </div>
         </div>
 
         {/* Image Section */}
-        <div
-          className="flex items-center justify-center"
-          data-appear="fade-right"
-        >
-          <motion.img
+        <div className="flex items-center justify-center">
+          <img
             src="src/assets/Images/image1.jpg"
             alt="What Our Clients Say"
             className="rounded-lg shadow-lg object-cover w-full h-full hidden md:block"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
           />
         </div>
       </div>

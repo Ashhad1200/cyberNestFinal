@@ -1,29 +1,7 @@
-import { useState, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 
 const CTASection = () => {
   const [formResponse, setFormResponse] = useState("");
-  
-  // IntersectionObserver hook to track when section is in view
-  const { ref, inView } = useInView({
-    triggerOnce: true, // triggers animation once
-    threshold: 0.1,    // triggers when 10% of the section is in view
-  });
-
-  // Framer motion controls for the form and text sections
-  const controls = useAnimation();
-
-  // Trigger animations when in view
-  useEffect(() => {
-    if (inView) {
-      controls.start({
-        opacity: 1,
-        x: 0,
-        transition: { duration: 1 },
-      });
-    }
-  }, [inView, controls]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,14 +9,10 @@ const CTASection = () => {
   };
 
   return (
-    <section ref={ref} className="py-16 my-28">
+    <section className="py-16 my-28">
       <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
         {/* Form Section */}
-        <motion.div
-          className="lg:w-4/5 flex justify-center"
-          initial={{ opacity: 0, x: -100 }} // Initial state before scrolling into view
-          animate={controls}                // Animation controlled by IntersectionObserver
-        >
+        <div className="lg:w-4/5 flex justify-center">
           <div className="bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-md">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -91,14 +65,10 @@ const CTASection = () => {
               <div className="text-green-500 mt-4">{formResponse}</div>
             </form>
           </div>
-        </motion.div>
+        </div>
 
         {/* Text Section */}
-        <motion.div
-          className="lg:w-1/2 text-white lg:mx-0 mx-5"
-          initial={{ opacity: 0, x: 100 }} // Initial state before scrolling into view
-          animate={controls}                // Animation controlled by IntersectionObserver
-        >
+        <div className="lg:w-1/2 text-white lg:mx-0 mx-5">
           <h2 className="text-4xl font-bold mb-4">
             Let’s discuss your next creative project.
           </h2>
@@ -123,7 +93,7 @@ const CTASection = () => {
               <div className="text-gray-400">Years in Work</div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
