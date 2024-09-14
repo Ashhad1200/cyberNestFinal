@@ -1,40 +1,53 @@
 const HeroSection = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="text-white p-8 container my-9">
-        <div className="flex flex-col items-center lg:items-center mx-auto">
-          {/* Image with hover animation */}
-          <img
-            src="src/assets/Images/image1.jpg"
-            alt="Creative Workspace"
-            className="rounded-lg w-full lg:w-3/4 mb-6 transition-transform transform hover:scale-105 duration-500 ease-in-out"
-          />
+    <div className="text-white flex flex-col items-center justify-center min-h-screen py-12 px-4">
+      {/* Image Section */}
+      <div className="flex justify-center w-full">
+        <img
+          src="src/assets/Images/image1.jpg"
+          alt="Creative Workspace"
+          className="rounded-lg w-full lg:w-3/4 mb-8"
+        />
+      </div>
 
-          {/* Awards Info */}
-          <div className="lg:text-center items-baseline">
-            <p className="text-lg mb-4">
-              8 awards won &nbsp;&nbsp; | &nbsp;&nbsp; From 2020 &nbsp;&nbsp; |
-              &nbsp;&nbsp; 420 portfolios Done
-            </p>
-          </div>
+      {/* Awards and Portfolio Info */}
+      <div className="flex justify-between items-center text-gray-400 text-sm w-full lg:w-3/4 mb-4">
+        <p>8 awards won</p>
+        <p>From 2020</p>
+        <p>420 portfolios Done</p>
+      </div>
 
-          {/* Heading and Profile Images */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between w-full lg:w-auto">
-            {/* Heading with animation */}
-            <div className="text-center lg:text-left mb-6 lg:mb-0 lg:mr-8">
-              <h1 className="lg:text-7xl text-4xl font-bold mb-4 transition-opacity duration-700 ease-in-out  animate-fadeIn">
-                Bring your creative ideas <br /> into Reality!
-              </h1>
-              <p className="text-xl mb-4 transition-opacity duration-700 ease-in-out  animate-fadeIn delay-200">
-                We help creative agencies, designers, and other creative people
-                showcase their work and connect with clients.
-              </p>
-            </div>
-          </div>
+      {/* Main Heading Section */}
+      <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:w-3/4 text-center lg:text-left mb-8">
+        <div className="lg:max-w-lg">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-4 leading-tight">
+            Bring your creative ideas into Reality!
+          </h1>
+        </div>
 
-          {/* Button with hover animation */}
-          <div className="mt-4">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg transition-transform transform hover:scale-105 duration-300">
+        <div>
+          {/* Profile Images Section */}
+          <p className="text-2xl text-gray-300 mb-4 lg:mb-14 text-right ">
+          We help creative agencies, designers, and other creative people showcase their work and connect with clients.
+          </p>
+
+          <div className="flex items-end justify-center lg:justify-end space-x-4 mt-4 lg:mt-0">
+            <img
+              src="src/assets/Images/image1.jpg"
+              alt="Person 1"
+              className="w-28 h-28  rounded-lg"
+            />
+            <img
+              src="src/assets/Images/image1.jpg"
+              alt="Person 2"
+              className="w-28 h-28  rounded-lg"
+            />
+            <img
+              src="src/assets/Images/image1.jpg"
+              alt="Person 3"
+              className="w-28 h-28  rounded-lg"
+            />
+            <button className="bg-blue-500 w-28 h-28  rounded-lg text-white px-6 py-3 shadow-md transition-transform transform hover:scale-105">
               Trusted by 24k+ Customers
             </button>
           </div>

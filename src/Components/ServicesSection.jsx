@@ -34,8 +34,8 @@ const ServicesSection = () => {
   return (
     <>
       {/* Services List */}
-      <div className="container mx-auto px-4">
-        <ul className="space-y-12">
+      <div className="container mx-auto px-4 items-center w-10/12">
+        <ul className="space-y-5">
           {services.map((service, index) => (
             <motion.li
               key={index}
@@ -44,13 +44,13 @@ const ServicesSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animation
             >
-              <div className="w-1/2">
+              <div className="w-2/5">
                 <h4 className="text-2xl font-semibold mb-4">
                   {service.title}
                   <span className="text-blue-500">.</span>
                 </h4>
               </div>
-              <div className="w-1/2 flex items-center justify-between">
+              <div className="w-3/5 flex items-center justify-between">
                 <p className="text-gray-400 hidden md:block">{service.description}</p>
                 <a
                   href={service.link}

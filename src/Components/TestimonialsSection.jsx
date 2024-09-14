@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="text-white py-16">
+    <section className="text-white py-16 container mx-auto px-4 items-center w-10/12">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold" data-appear="fade-up">

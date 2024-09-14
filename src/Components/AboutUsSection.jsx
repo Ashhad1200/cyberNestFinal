@@ -2,38 +2,51 @@ import { motion } from "framer-motion";
 
 const AboutUsSection = () => {
   return (
-    <div className="text-white p-8 container my-9">
-      <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+    <div className="text-white p-12 lg:mt-40">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-center">
+        {/* Image Section */}
         <motion.img
-          src="src/assets/Images/image1.jpg"
-          alt="Creative Workspace"
-          className="rounded-lg w-full lg:w-1/2"
+          src="src/assets/Images/about02.jpg"
+          alt="Team working together"
+          className="rounded-lg w-full lg:w-2/6 mb-8 lg:mb-0"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         />
+
+        {/* Text Content */}
         <motion.div
-          className="text-center lg:text-left lg:ml-8 mt-6 lg:mt-0"
+          className="lg:ml-12 text-center lg:text-left lg:w-5/12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <h1 className="text-4xl font-bold mb-4">
-            Bring your creative ideas into Reality!
+          <h1 className="text-4xl font-bold mb-4 leading-snug">
+            We are a passionate team of designers and developers.
           </h1>
-          <p className="text-xl mb-4">
-            We help creative agencies, designers, and other creative people
-            showcase their work and connect with clients.
+          <p className="text-2xl mb-4">
+            We believe in the power of creativity.
           </p>
-          <div className="mt-4">
-            <motion.button
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Trusted by 24k+ Customers
-            </motion.button>
-          </div>
+          <p className="text-md mb-6 text-gray-400">
+            We are a team of passionate and experienced designers, developers,
+            and marketers who specialize in helping businesses of all sizes
+            achieve their goals. We are committed to helping our clients unleash
+            their full potential.
+          </p>
+          {/* Button Section */}
+          <motion.div
+            className="mt-4 bg-white text-black px-6 py-3 inline-block rounded-lg"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <p className="text-lg font-semibold flex items-center gap-2">
+              <span>We are Passionate Team</span>
+              <motion.span whileHover={{ rotate: 45 }} className="ml-2">
+                ↗
+              </motion.span>
+            </p>
+            <p className="text-sm mt-1">Learn more about us</p>
+          </motion.div>
         </motion.div>
       </div>
     </div>

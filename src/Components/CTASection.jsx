@@ -35,7 +35,7 @@ const CTASection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
         {/* Form Section */}
         <motion.div
-          className="lg:w-2/3 flex justify-center"
+          className="lg:w-4/5 flex justify-center"
           initial={{ opacity: 0, x: -100 }} // Initial state before scrolling into view
           animate={controls}                // Animation controlled by IntersectionObserver
         >
