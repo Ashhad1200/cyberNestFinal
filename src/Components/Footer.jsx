@@ -4,7 +4,7 @@ import {
   FaTwitter,
   FaTiktok,
   FaPatreon,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -19,21 +19,41 @@ const Footer = () => {
               in the power of creativity. We help creative people create a
               strong online presence that shows their work and tells a story.
             </p>
-            {/* Social Icons */}
+            {/* Social Icons with animation */}
             <div className="mt-5 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="#"
+                aria-label="Visit us on Facebook"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+              >
                 <FaFacebookF size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="#"
+                aria-label="Visit us on Instagram"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+              >
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="#"
+                aria-label="Visit us on Twitter"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+              >
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="#"
+                aria-label="Visit us on TikTok"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+              >
                 <FaTiktok size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a
+                href="#"
+                aria-label="Visit us on Patreon"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
+              >
                 <FaPatreon size={20} />
               </a>
             </div>
@@ -45,27 +65,42 @@ const Footer = () => {
               <h3 className="font-semibold">Services</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Branding
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Marketing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Graphic Design
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Web Design
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Content Creation
                   </a>
                 </li>
@@ -76,22 +111,34 @@ const Footer = () => {
               <h3 className="font-semibold">About Us</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Our Team
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Get in Touch
                   </a>
                 </li>
@@ -102,22 +149,34 @@ const Footer = () => {
               <h3 className="font-semibold">Resources</h3>
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Help Center
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
                     Privacy Policy
                   </a>
                 </li>

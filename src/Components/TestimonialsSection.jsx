@@ -1,4 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -43,11 +44,12 @@ const TestimonialsSection = () => {
         {/* Testimonials */}
         <div>
           {testimonials.map((testimonial, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6"
-              data-appear="fade-left"
-              data-delay={index * 50}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
             >
               <p className="text-lg italic mb-4">{testimonial.text}</p>
               <div className="flex justify-between items-center">
@@ -94,16 +96,19 @@ const TestimonialsSection = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
           {/* Read all testimonials link */}
           <div className="text-right mt-4">
-            <a
+            <motion.a
               href="/testimonials"
               className="text-blue-500 hover:underline inline-flex items-center"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
             >
               Read all testimonials <BsArrowRight className="ml-2" size={18} />
-            </a>
+            </motion.a>
           </div>
         </div>
 
@@ -112,10 +117,13 @@ const TestimonialsSection = () => {
           className="flex items-center justify-center"
           data-appear="fade-right"
         >
-          <img
+          <motion.img
             src="src/assets/Images/image1.jpg"
             alt="What Our Clients Say"
             className="rounded-lg shadow-lg object-cover w-full h-full hidden md:block"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           />
         </div>
       </div>
