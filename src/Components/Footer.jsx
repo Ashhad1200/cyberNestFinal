@@ -24,35 +24,30 @@ const Footer = () => {
             <div className="mt-5 flex space-x-4">
               <Link
                 to="#"
-                aria-label="Visit us on Facebook"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaFacebookF size={20} />
               </Link>
               <Link
                 to="#"
-                aria-label="Visit us on Instagram"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaInstagram size={20} />
               </Link>
               <Link
                 to="#"
-                aria-label="Visit us on Twitter"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaTwitter size={20} />
               </Link>
               <Link
                 to="#"
-                aria-label="Visit us on TikTok"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaTiktok size={20} />
               </Link>
               <Link
                 to="#"
-                aria-label="Visit us on Patreon"
                 className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 duration-300"
               >
                 <FaPatreon size={20} />

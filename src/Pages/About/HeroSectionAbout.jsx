@@ -5,11 +5,11 @@ const HeroSectionAbout = () => {
       <div className="flex flex-col items-center lg:items-center lg:mx-auto mx-3">
         <img
           className="rounded-lg w-full  lg:w-3/4 mb-6"
-          src="src/assets/Images/image1.jpg"
+          src="src/assets/Images/about-us.jpg"
           alt="About Bringer"
         />
       </div>
-
+  
       {/* Content Section */}
       <div className="container lg:w-3/4 lg:mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 mx-6">
         {/* Left Column */}

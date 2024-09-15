@@ -28,7 +28,7 @@ const ContactUsPage = () => {
             className="space-y-6 flex flex-col justify-between"
             data-unload="fade-left"
           >
-            <h2 className="text-4xl font-bold" data-split-appear="fade-up">
+            <h2 className="text-4xl font-bold lg:mx-0 mx-5">
               Ready to ignite your brand's fire? 🔥 Let's connect! 🤝
             </h2>
           </div>
@@ -36,12 +36,9 @@ const ContactUsPage = () => {
 
         {/* Second Row - Content on the right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div></div> {/* Empty column for alignment */}
+          <div></div> 
           <div
-            className="space-y-6"
-            data-appear="fade-left"
-            data-unload="fade-right"
-            data-delay="100"
+            className="space-y-6 lg:mx-0 mx-5"
           >
             <p className="text-2xl text-white">
               We help creative agencies, designers, and other creative people to
@@ -53,10 +50,10 @@ const ContactUsPage = () => {
       </div>
 
       {/* Images Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4 lg:mx-0 mx-5">
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="src/assets/Images/contact-section-bg.jpg"
             alt="Group working together"
             className="w-full h-full object-cover"
           />
@@ -70,16 +67,15 @@ const ContactUsPage = () => {
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="src/assets/Images/about02.jpg"
             alt="Collaboration"
             className="w-full h-full object-cover"
           />
         </div>
       </div>
 
-
-    <LetsTask />
-    <CTASection/>
+      <LetsTask />
+      <CTASection />
     </div>
   );
 };

@@ -1,4 +1,10 @@
-import { FaFacebookF, FaInstagram, FaPatreon, FaTiktok, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPatreon,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
 
 const LetsTask = () => {
   return (
@@ -14,42 +20,42 @@ const LetsTask = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Phone Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg lg:p-9">
           <h2 className="text-2xl font-bold mb-2">
             Phone<span className="text-blue-400">.</span>
           </h2>
           <p className="text-xl mb-4">+1 (234) 555-67-89</p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 lg:mt-40">
             Give us a call and chat directly with our friendly team. We’re
             always happy to answer any questions.
           </p>
         </div>
 
         {/* Email Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg lg:p-9">
           <h2 className="text-2xl font-bold mb-2">
             Email<span className="text-blue-400">.</span>
           </h2>
           <p className="text-xl mb-4">bringer@example.com</p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 lg:mt-40">
             Send us a detailed message. We’ll get back to you as soon as
             possible to discuss your creative project further.
           </p>
         </div>
 
         {/* Social Media Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg lg:p-9">
           <h2 className="text-2xl font-bold mb-2">
             Social Media<span className="text-blue-400">.</span>
           </h2>
           <div className="flex space-x-4 mb-4">
-            <FaFacebookF className="text-xl hover:text-blue-500 cursor-pointer" />
-            <FaInstagram className="text-xl hover:text-pink-500 cursor-pointer" />
-            <FaTwitter className="text-xl hover:text-blue-400 cursor-pointer" />
-            <FaTiktok className="text-xl hover:text-black cursor-pointer" />
-            <FaPatreon className="text-xl hover:text-orange-500 cursor-pointer" />
+            <FaFacebookF className="text-xl hover:text-blue-500 cursor-pointer transition-transform transform hover:scale-110 duration-300" />
+            <FaInstagram className="text-xl hover:text-pink-500 cursor-pointer transition-transform transform hover:scale-110 duration-300" />
+            <FaTwitter className="text-xl hover:text-blue-400 cursor-pointer transition-transform transform hover:scale-110 duration-300" />
+            <FaTiktok className="text-xl hover:text-black cursor-pointer transition-transform transform hover:scale-110 duration-300" />
+            <FaPatreon className="text-xl hover:text-orange-500 cursor-pointer transition-transform transform hover:scale-110 duration-300" />
           </div>
-          <p className="text-gray-400">
+          <p className="text-gray-400 lg:mt-40">
             Follow us on Social Media Platforms for a glimpse into our creative
             world, industry insights, and projects.
           </p>
