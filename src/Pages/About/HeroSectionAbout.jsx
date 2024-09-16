@@ -9,14 +9,11 @@ const HeroSectionAbout = () => {
           alt="About Bringer"
         />
       </div>
-  
+
       {/* Content Section */}
-      <div className="container lg:w-3/4 lg:mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 mx-6">
+      <div className="lg:w-3/4 lg:mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 mx-6">
         {/* Left Column */}
-        <div
-          className="space-y-6 flex flex-col justify-between items-end"
-          
-        >
+        <div className="space-y-6 flex flex-col justify-between lg:items-end">
           <h2 className="text-5xl font-bold">
             Igniting brands that spark movements.
           </h2>
@@ -32,9 +29,7 @@ const HeroSectionAbout = () => {
         </div>
 
         {/* Right Column */}
-        <div
-          className="space-y-6"
-        >
+        <div className="space-y-6 w-11/12">
           <p className="text-2xl text-white">
             We help creative agencies, designers, and other creative people to
             connect with potential clients.

@@ -33,24 +33,24 @@ const ServicesSection = () => {
   return (
     <>
       {/* Services List */}
-      <div className="container mx-auto px-4 items-center w-10/12">
+      <div className="container mx-auto px-0 items-center w-10/12">
         <ul className="space-y-5">
           {services.map((service, index) => (
             <li
               key={index}
               className="flex justify-between items-center bg-gray-800 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="w-2/5">
+              <div className="lg:w-2/5 w-3/4">
                 <h4 className="text-2xl font-semibold mb-4">
                   {service.title}
                   <span className="text-blue-500">.</span>
                 </h4>
               </div>
-              <div className="w-3/5 flex items-center justify-between">
+              <div className="lg:w-3/5 w-1/4 flex items-center justify-between">
                 <p className="text-gray-400 hidden md:block">{service.description}</p>
                 <a
                   href={service.link}
-                  className="text-blue-500 p-4 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors ml-4"
+                  className="text-blue-500 p-4 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors ml-4 lg:ml-0"
                 >
                   <BsArrowUpRight size={24} />
                 </a>
