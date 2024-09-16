@@ -29,16 +29,15 @@ const ContactUsPage = () => {
       <div className="container lg:w-3/4 lg:mx-auto py-16">
         {/* First Row - Heading on the left */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-6 flex flex-col justify-between">
+          <div className="space-y-6 flex flex-col justify-between mx-5">
             <h2 className="text-4xl font-bold">
               Ready to ignite your brand's fire? 🔥 Let's connect! 🤝
             </h2>
           </div>
         </div>
 
-        {/* Second Row - Content on the right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div></div> {/* Empty column for alignment */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-5">
+          <div></div>
           <div className="space-y-6">
             <p className="text-2xl text-white">
               We help creative agencies, designers, and other creative people to
@@ -47,10 +46,11 @@ const ContactUsPage = () => {
             </p>
           </div>
         </div>
+
       </div>
 
       {/* Images Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4 mx-5">
         <div className="rounded-lg overflow-hidden">
           <img
             src="/Images/image1.jpg"

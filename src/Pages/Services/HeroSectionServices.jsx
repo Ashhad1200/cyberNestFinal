@@ -11,7 +11,7 @@ const HeroSectionServices = () => {
       </div>
 
       {/* Content Section */}
-      <div className="container lg:w-3/4 lg:mx-auto py-16">
+      <div className="mx-4 lg:w-3/4 lg:mx-auto py-16">
         {/* First Row - Heading on the left */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div
@@ -35,7 +35,7 @@ const HeroSectionServices = () => {
           >
             <p className="text-2xl text-white">
               We help creative agencies, designers, and other creative people to
-              connect with potential clients. We're not just creatives; we're
+              connect with potential clients. We're not just creatives we're
               brand-whisperers, storytellers, and digital alchemists.
             </p>
           </div>
