@@ -1,4 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -6,27 +7,27 @@ const ServicesSection = () => {
       title: "Branding",
       description: `We weave visual stories and craft strategic messaging that resonate at heartstrings, 
       build unwavering trust, and turn customers into fervent brand champions.`,
-      link: "service-details.html",
+      link: "/services",
     },
     {
       title: "Marketing",
       description: `We design data-driven campaigns that ignite engagement like wildfire and turn clicks into conversions.`,
-      link: "service-details.html",
+      link: "/services",
     },
     {
       title: "Graphic Design",
       description: `We craft visual masterpieces that sing your brand's story in vibrant colors and captivating shapes.`,
-      link: "service-details.html",
+      link: "/services",
     },
     {
       title: "Graphic Design",
       description: `We craft visual masterpieces that sing your brand's story in vibrant colors and captivating shapes.`,
-      link: "service-details.html",
+      link: "/services",
     },
     {
       title: "Graphic Design",
       description: `We craft visual masterpieces that sing your brand's story in vibrant colors and captivating shapes.`,
-      link: "service-details.html",
+      link: "/services",
     },
   ];
 
@@ -62,13 +63,13 @@ const ServicesSection = () => {
 
       {/* Explore All Services Button */}
       <div className="text-center mt-16">
-        <a
-          href="services.html"
+        <Link
+          to="/services"
           className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors inline-flex items-center"
         >
           Explore All Services
           <BsArrowUpRight size={20} className="ml-2" />
-        </a>
+        </Link>
       </div>
     </>
   );

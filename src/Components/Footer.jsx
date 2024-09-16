@@ -62,7 +62,7 @@ const Footer = () => {
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
                   <Link
-                    to="#"
+                    to="/services"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Branding
@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/services"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Marketing
@@ -78,7 +78,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/services"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Graphic Design
@@ -86,7 +86,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/services"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Web Design
@@ -108,7 +108,7 @@ const Footer = () => {
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="hover:text-white transition-colors duration-300"
                   >
                     About Us
@@ -116,7 +116,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Our Team
@@ -124,7 +124,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Testimonials
@@ -132,7 +132,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Get in Touch
@@ -146,7 +146,7 @@ const Footer = () => {
               <ul className="mt-3 space-y-2 text-gray-400">
                 <li>
                   <Link
-                    to="#"
+                    to="/contact"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Pricing
@@ -154,7 +154,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/contact"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Help Center
@@ -162,7 +162,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/contact"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Terms of Use
@@ -170,7 +170,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/contact"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Privacy Policy
