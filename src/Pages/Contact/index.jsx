@@ -20,7 +20,7 @@ const ContactUsPage = () => {
       <div className="flex flex-col items-center lg:items-center lg:mx-auto mx-3">
         <img
           className="rounded-3xl w-full lg:w-3/4 mb-6"
-          src="src/assets/Images/contacts01.jpg"
+          src="/Images/contacts01.jpg"
           alt="About Bringer"
         />
       </div>
