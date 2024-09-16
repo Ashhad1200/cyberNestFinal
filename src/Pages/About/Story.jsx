@@ -4,7 +4,7 @@ const Story = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-center">
         {/* Image Section */}
         <img
-          src="src/assets/Images/about02.jpg"
+          src=" /Images/about02.jpg"
           alt="Team working together"
           className="rounded-lg w-full lg:w-2/6 mb-8 lg:mb-0"
         />

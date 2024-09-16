@@ -5,7 +5,7 @@ const HeroSectionAbout = () => {
       <div className="flex flex-col items-center lg:items-center lg:mx-auto mx-3">
         <img
           className="rounded-lg w-full  lg:w-3/4 mb-6"
-          src="src/assets/Images/about-us.jpg"
+          src=" /Images/about-us.jpg"
           alt="About Bringer"
         />
       </div>

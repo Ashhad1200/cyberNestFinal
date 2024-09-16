@@ -53,21 +53,21 @@ const ContactUsPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4">
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="/Images/image1.jpg"
             alt="Group working together"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="/Images/image1.jpg"
             alt="Team discussion"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="/Images/image1.jpg"
             alt="Collaboration"
             className="w-full h-full object-cover"
           />

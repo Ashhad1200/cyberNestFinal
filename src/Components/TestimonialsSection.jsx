@@ -104,7 +104,7 @@ const TestimonialsSection = () => {
         {/* Image Section */}
         <div className="flex items-center justify-center">
           <img
-            src="src/assets/Images/image1.jpg"
+            src="/Images/image1.jpg"
             alt="What Our Clients Say"
             className="rounded-lg shadow-lg object-cover w-full h-full hidden md:block"
           />

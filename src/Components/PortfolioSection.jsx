@@ -4,37 +4,37 @@ const portfolioItems = [
   {
     title: 'Curology',
     category: 'Branding',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
   {
     title: 'Cookie Dough',
     category: 'Advertising',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
   {
     title: 'Gaming Power',
     category: 'Marketing',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
   {
     title: 'Riot Energy',
     category: 'Advertising',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
   {
     title: 'Smoothie',
     category: 'Marketing',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
   {
     title: 'Positive Beverage',
     category: 'Branding',
-    image: 'src/assets/Images/image1.jpg',
+    image: '/Images/image1.jpg',
     link: '#',
   },
 ];

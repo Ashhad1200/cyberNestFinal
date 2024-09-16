@@ -4,7 +4,7 @@ const HeroSection = () => {
       {/* Image Section */}
       <div className="flex justify-center w-full">
         <img
-          src="src/assets/Images/image1.jpg"
+          src="/Images/image1.jpg"
           alt="Creative Workspace"
           className="rounded-lg w-full lg:w-3/4 mb-8"
         />
@@ -33,17 +33,17 @@ const HeroSection = () => {
 
           <div className="flex items-end justify-center lg:justify-end space-x-4 mt-4 lg:mt-0">
             <img
-              src="src/assets/Images/image1.jpg"
+              src="/Images/image1.jpg"
               alt="Person 1"
               className="w-28 h-28  rounded-lg"
             />
             <img
-              src="src/assets/Images/image1.jpg"
+              src="/Images/image1.jpg"
               alt="Person 2"
               className="w-28 h-28  rounded-lg"
             />
             <img
-              src="src/assets/Images/image1.jpg"
+              src="/Images/image1.jpg"
               alt="Person 3"
               className="w-28 h-28  rounded-lg"
             />
