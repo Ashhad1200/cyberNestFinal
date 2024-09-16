@@ -1,6 +1,13 @@
+import React from "react";
 import CTASection from "../../Components/CTASection";
 import LetsTask from "./LetsTask";
-// import about-us.jpg from '0'
+
+// Importing images
+import contactImg from "../../assets/Images/contacts01.jpg";
+import sectionBgImg from "../../assets/Images/contact-section-bg.jpg";
+import image1 from "../../assets/Images/image1.jpg";
+import aboutImg from "../../assets/Images/about02.jpg";
+
 const ContactUsPage = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:mx-40">
@@ -14,13 +21,16 @@ const ContactUsPage = () => {
           architecto culpa exercitationem!
         </p>
       </div>
+
+      {/* Image */}
       <div className="flex flex-col items-center lg:items-center lg:mx-auto mx-3">
         <img
-          className="rounded-3xl w-full  lg:w-3/4 mb-6"
-          src="./src/assets/Images/contacts01.jpg"
+          className="rounded-3xl w-full lg:w-3/4 mb-6"
+          src={contactImg} // Use the imported image
           alt="About Bringer"
         />
       </div>
+
       <div className="container lg:w-3/4 lg:mx-auto py-16">
         {/* First Row - Heading on the left */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -36,10 +46,8 @@ const ContactUsPage = () => {
 
         {/* Second Row - Content on the right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div></div> 
-          <div
-            className="space-y-6 lg:mx-0 mx-5"
-          >
+          <div></div>
+          <div className="space-y-6 lg:mx-0 mx-5">
             <p className="text-2xl text-white">
               We help creative agencies, designers, and other creative people to
               connect with potential clients. We're not just creatives; we're
@@ -53,21 +61,21 @@ const ContactUsPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:w-3/4 lg:mx-0 mx-5">
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/contact-section-bg.jpg"
+            src={sectionBgImg} // Use the imported image
             alt="Group working together"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/image1.jpg"
+            src={image1} // Use the imported image
             alt="Team discussion"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="rounded-lg overflow-hidden">
           <img
-            src="src/assets/Images/about02.jpg"
+            src={aboutImg} // Use the imported image
             alt="Collaboration"
             className="w-full h-full object-cover"
           />
