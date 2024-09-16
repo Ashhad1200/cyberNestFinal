@@ -9,7 +9,7 @@ import {
 const LetsTask = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:mx-40 mx-10">
-      <div className="max-w-4xl mx-auto p-8 rounded-lg items-center lg:mt-16 lg:mb-10 mx-3 ">
+      <div className="max-w-4xl mx-auto p-8 rounded-lg items-center lg:mt-16 lg:mb-10">
         <h1 className="lg:text-5xl text-6xl font-bold mb-4 text-center">
           Let's 🗣 talk!
         </h1>
@@ -24,8 +24,8 @@ const LetsTask = () => {
           <h2 className="text-2xl font-bold mb-2">
             Phone<span className="text-blue-400">.</span>
           </h2>
-          <p className="text-xl mb-4">+1 (234) 555-67-89</p>
-          <p className="text-gray-400 lg:mt-40">
+          <p className="text-xl mb-4 md:text-xs">+1 (234) 555-67-89</p>
+          <p className="text-gray-400 mt-10 2xl:mt-40">
             Give us a call and chat directly with our friendly team. We’re
             always happy to answer any questions.
           </p>
@@ -36,8 +36,8 @@ const LetsTask = () => {
           <h2 className="text-2xl font-bold mb-2">
             Email<span className="text-blue-400">.</span>
           </h2>
-          <p className="text-xl mb-4">bringer@example.com</p>
-          <p className="text-gray-400 lg:mt-40">
+          <p className="text-xl mb-4 md:text-xs ">bringer@example.com</p>
+          <p className="text-gray-400 mt-10 2xl:mt-40">
             Send us a detailed message. We’ll get back to you as soon as
             possible to discuss your creative project further.
           </p>
@@ -55,7 +55,7 @@ const LetsTask = () => {
             <FaTiktok className="text-xl hover:text-black cursor-pointer transition-transform transform hover:scale-110 duration-300" />
             <FaPatreon className="text-xl hover:text-orange-500 cursor-pointer transition-transform transform hover:scale-110 duration-300" />
           </div>
-          <p className="text-gray-400 lg:mt-40">
+          <p className="text-gray-400 mt-10 2xl:mt-40">
             Follow us on Social Media Platforms for a glimpse into our creative
             world, industry insights, and projects.
           </p>

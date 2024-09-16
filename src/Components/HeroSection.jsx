@@ -27,28 +27,29 @@ const HeroSection = () => {
 
         <div>
           {/* Profile Images Section */}
-          <p className="text-2xl text-gray-300 mb-4 lg:mb-14 text-right ">
-          We help creative agencies, designers, and other creative people showcase their work and connect with clients.
+          <p className="text-2xl text-gray-300 mb-4 lg:mb-14 lg:text-right ">
+            We help creative agencies, designers, and other creative people
+            showcase their work and connect with clients.
           </p>
 
-          <div className="flex items-end justify-center lg:justify-end space-x-4 mt-4 lg:mt-0">
+          <div className="flex items-end justify-center lg:justify-end space-x-4 mx-5 mt-4 lg:mt-0 ">
             <img
               src="/Images/image1.jpg"
               alt="Person 1"
-              className="w-28 h-28  rounded-lg"
+              className="2xl:w-28 2xl:h-28 w-16 h-16 rounded-lg"
             />
             <img
               src="/Images/image1.jpg"
               alt="Person 2"
-              className="w-28 h-28  rounded-lg"
+              className="2xl:w-28 2xl:h-28 w-16 h-16 rounded-lg"
             />
             <img
               src="/Images/image1.jpg"
               alt="Person 3"
-              className="w-28 h-28  rounded-lg"
+              className="2xl:w-28 2xl:h-28 w-16 h-16 rounded-lg"
             />
-            <button className="bg-blue-500 w-28 h-28  rounded-lg text-white px-6 py-3 shadow-md transition-transform transform hover:scale-105">
-              Trusted by 24k+ Customers
+            <button className="bg-blue-500 2xl:w-28 2xl:h-28 w-16 h-16 rounded-lg text-white px-6 py-3 shadow-md transition-transform transform hover:scale-105 flex  items-center justify-center text-xs 2xl:text-xl">
+              <span>24k+ Customers</span>
             </button>
           </div>
         </div>

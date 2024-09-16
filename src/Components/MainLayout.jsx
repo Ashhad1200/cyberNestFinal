@@ -7,7 +7,7 @@ import Services from "./Services";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen lg:mx-40">
+    <div className="flex flex-col items-center justify-center min-h-screen 2xl:mx-40">
       <HeroSection />
 
       <AboutUsSection />
