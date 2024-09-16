@@ -1,6 +1,6 @@
 import CTASection from "../../Components/CTASection";
 import LetsTask from "./LetsTask";
-
+// import about-us.jpg from '0'
 const ContactUsPage = () => {
   return (
     <div className="flex flex-col items-center justify-center lg:mx-40">
@@ -17,7 +17,7 @@ const ContactUsPage = () => {
       <div className="flex flex-col items-center lg:items-center lg:mx-auto mx-3">
         <img
           className="rounded-3xl w-full  lg:w-3/4 mb-6"
-          src="src/assets/Images/contacts01.jpg"
+          src="./src/assets/Images/contacts01.jpg"
           alt="About Bringer"
         />
       </div>
