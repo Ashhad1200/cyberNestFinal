@@ -46,7 +46,7 @@ const ServicesSection = () => {
                   <span className="text-blue-500">.</span>
                 </h4>
               </div>
-              <div className="lg:w-3/5 w-1/4 flex items-center justify-between">
+              <div className="lg:w-3/5 flex items-center justify-between">
                 <p className="text-gray-400 hidden md:block">{service.description}</p>
                 <a
                   href={service.link}
