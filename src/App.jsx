@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import AboutPage from './Pages/About';
 import ServicesPage from './Pages/Services';
 import ContactUsPage from './Pages/Contact';
+import Portfolio from './Components/Portfolio';
 // Import other page components here if needed, like Contact
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
         </main>
         <Footer />
