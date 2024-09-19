@@ -1,4 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -92,12 +93,12 @@ const TestimonialsSection = () => {
           ))}
           {/* Read all testimonials link */}
           <div className="text-right mt-4">
-            <a
-              href="/testimonials"
+            <Link
+              to="/testimonials"
               className="text-blue-500 hover:underline inline-flex items-center"
             >
               Read all testimonials <BsArrowRight className="ml-2" size={18} />
-            </a>
+            </Link>
           </div>
         </div>
 

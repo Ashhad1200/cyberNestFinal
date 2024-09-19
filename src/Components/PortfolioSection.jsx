@@ -1,4 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const portfolioItems = [
   {
@@ -71,25 +72,25 @@ const PortfolioSection = () => {
               </div>
             </div>
             {/* Arrow Icon */}
-            <a
-              href={item.link}
+            <Link
+              to={item.link}
               className="absolute bottom-4 right-4 p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors"
             >
               <BsArrowUpRight size={20} />
-            </a>
+            </Link>
           </div>
         ))}
       </div>
 
       {/* Explore All Works Button */}
       <div className="text-center mt-12">
-        <a
-          href="#"
+        <Link
+          to="#"
           className="inline-flex items-center text-blue-500 hover:underline"
         >
           Explore All Works
           <BsArrowUpRight size={18} className="ml-2" />
-        </a>
+        </Link>
       </div>
     </section>
   );

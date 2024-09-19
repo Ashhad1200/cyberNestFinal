@@ -49,12 +49,12 @@ const ServicesSection = () => {
               </div>
               <div className="lg:w-3/5 flex items-center justify-between">
                 <p className="text-gray-400 hidden md:block">{service.description}</p>
-                <a
-                  href={service.link}
+                <Link
+                  to={service.link}
                   className="text-blue-500 p-4 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors ml-4 lg:ml-0"
                 >
                   <BsArrowUpRight size={24} />
-                </a>
+                </Link>
               </div>
             </li>
           ))}

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,15 +19,13 @@ const NavBar = () => {
             <img
               src="public/Images/logoW.png"
               alt="Logo"
-              className="h-11 w-auto lg:h-14 lg:mx-4  " // Adjust logo size here
+              className="h-11 w-auto lg:h-14 lg:mx-4"
             />
-            {/* Hide name on small screens */}
             <div className="text-lg font-bold text-white lg:block hidden">
               Cyber Nest
             </div>
           </div>
 
-          {/* Hamburger/Close Icon for Mobile */}
           <button
             className="block lg:hidden text-white hover:text-blue-500 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -65,7 +65,6 @@ const NavBar = () => {
             )}
           </button>
 
-          {/* Navbar Links */}
           <div
             className={`fixed inset-0 bg-black bg-opacity-50 lg:bg-transparent z-10 lg:relative lg:flex lg:items-center lg:opacity-100 transition-opacity duration-300 ease-in-out ${
               isOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -90,13 +89,39 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  onClick={handleLinkClick}
-                  className="text-white hover:text-blue-500 font-semibold block lg:inline-block py-2 lg:py-0"
-                >
-                  About
-                </Link>
+                <Menu as="div" className="relative text-left ">
+                  <div>
+                    <MenuButton className="inline-flex w-full justify-between items-center rounded-md text-sm font-semibold text-white hover:text-blue-500">
+                      About
+                      <RiArrowDropDownLine className=" h-5 w-5 text-gray-400" />
+                    </MenuButton>
+                  </div>
+                  <MenuItems
+                    transition
+                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none"
+                  >
+                    <div className="py-1">
+                      <MenuItem>
+                        <Link
+                          to="/about"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          About Us
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                      <Link
+                          to="/aboutTeam"
+                          onClick={handleLinkClick}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          About Team
+                        </Link>
+                      </MenuItem>
+                    </div>
+                  </MenuItems>
+                </Menu>
               </li>
               <li>
                 <Link

@@ -5,6 +5,7 @@ import {
     FaTiktok,
     FaPatreon,
   } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const TeamMemberCard = () => {
   return (
     <div className="text-white min-h-screen flex justify-center items-center p-4 ">
@@ -48,18 +49,18 @@ const TeamMemberCard = () => {
 
           {/* Social Icons */}
           <div className="flex space-x-4 text-2xl">
-            <a href="#" className="hover:text-blue-500">
+            <Link to="#" className="hover:text-blue-500">
               <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-pink-500">
+            </Link>
+            <Link to="#" className="hover:text-pink-500">
               <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-gray-500">
+            </Link>
+            <Link to="#" className="hover:text-gray-500">
               <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-red-500">
+            </Link>
+            <Link to="#" className="hover:text-red-500">
               <FaPatreon />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
