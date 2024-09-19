@@ -27,7 +27,7 @@ const NavBar = () => {
           </div>
 
           <button
-            className="block lg:hidden text-white hover:text-blue-500 focus:outline-none"
+            className="block lg:hidden text-white hover:text-blue-500 focus:outline-none z-30"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
             aria-expanded={isOpen}
@@ -89,32 +89,32 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Menu as="div" className="relative text-left ">
+                <Menu as="div" className="relative text-left">
                   <div>
-                    <MenuButton className="inline-flex w-full justify-between items-center rounded-md text-sm font-semibold text-white hover:text-blue-500">
+                    <MenuButton className="inline-flex w-full justify-between items-center rounded-md font-semibold  text-white hover:text-blue-500">
                       About
                       <RiArrowDropDownLine className=" h-5 w-5 text-gray-400" />
                     </MenuButton>
                   </div>
                   <MenuItems
                     transition
-                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none"
+                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-900 shadow-lg ring-1 p-2 ring-black ring-opacity-5 transition focus:outline-none"
                   >
                     <div className="py-1">
                       <MenuItem>
                         <Link
                           to="/about"
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-sm text-white hover:bg-slate-700 rounded-lg"
                         >
                           About Us
                         </Link>
                       </MenuItem>
                       <MenuItem>
-                      <Link
+                        <Link
                           to="/aboutTeam"
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-sm text-white hover:bg-slate-700 rounded-lg"
                         >
                           About Team
                         </Link>
