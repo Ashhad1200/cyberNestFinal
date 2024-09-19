@@ -11,9 +11,19 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-center sticky top-0 z-20 backdrop-blur-3xl">
-      <nav className="p-4 w-full max-w-6xl my-3 mx-2">
+      <nav className="p-4 w-full max-w-6xl mx-2">
         <div className="flex justify-between items-center">
-          <div className="text-lg font-bold text-white">Cyber Nest</div>
+          <div className="flex items-center">
+            <img
+              src="public/Images/logoW.png"
+              alt="Logo"
+              className="h-11 w-auto lg:h-14 lg:mx-4  " // Adjust logo size here
+            />
+            {/* Hide name on small screens */}
+            <div className="text-lg font-bold text-white lg:block hidden">
+              Cyber Nest
+            </div>
+          </div>
 
           {/* Hamburger/Close Icon for Mobile */}
           <button
@@ -64,7 +74,9 @@ const NavBar = () => {
           >
             <ul
               className={`flex flex-col lg:flex-row lg:space-x-6 lg:static absolute lg:rounded-none p-6 lg:p-0 bg-slate-600 lg:bg-transparent left-0 right-0 transition-transform duration-300 ease-in-out transform ${
-                isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+                isOpen
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-full opacity-0"
               } lg:transform-none lg:opacity-100 lg:visible`}
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
             >
