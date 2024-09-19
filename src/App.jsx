@@ -7,6 +7,8 @@ import AboutPage from './Pages/About';
 import ServicesPage from './Pages/Services';
 import ContactUsPage from './Pages/Contact';
 import Portfolio from './Components/Portfolio';
+import Testimonials from './Pages/Testimonials';
+import AboutTeam from './Pages/About/AboutTeam';
 // Import other page components here if needed, like Contact
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/aboutTeam" element={<AboutTeam />} />
           </Routes>
         </main>
         <Footer />
