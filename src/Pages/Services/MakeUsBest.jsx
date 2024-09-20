@@ -45,7 +45,7 @@ const cardData = [
 
 const WhatMakesUsBest = () => {
   return (
-    <section className="text-white py-12">
+    <section className="text-white py-12 mt-10">
       {/* Section Title */}
       <div className="absolute inset-0 bg-gradient-radial from-blue-600 via-transparent to-transparent opacity-30 pointer-events-none"></div>
       <div className="text-center max-w-3xl mx-auto mb-12">
