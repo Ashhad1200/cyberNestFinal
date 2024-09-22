@@ -3,40 +3,40 @@ import { Link } from "react-router-dom";
 
 const portfolioItems = [
   {
-    title: 'Curology',
-    category: 'Branding',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Curology",
+    category: "Branding",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
   {
-    title: 'Cookie Dough',
-    category: 'Advertising',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Cookie Dough",
+    category: "Advertising",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
   {
-    title: 'Gaming Power',
-    category: 'Marketing',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Gaming Power",
+    category: "Marketing",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
   {
-    title: 'Riot Energy',
-    category: 'Advertising',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Riot Energy",
+    category: "Advertising",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
   {
-    title: 'Smoothie',
-    category: 'Marketing',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Smoothie",
+    category: "Marketing",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
   {
-    title: 'Positive Beverage',
-    category: 'Branding',
-    image: '/Images/image1.jpg',
-    link: '#',
+    title: "Positive Beverage",
+    category: "Branding",
+    image: "/Images/image1.jpg",
+    link: "/portfolio",
   },
 ];
 
@@ -47,36 +47,36 @@ const PortfolioSection = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold">Portfolio</h2>
         <p className="text-lg text-gray-400 max-w-2xl mt-4 lg:mx-auto mx-3">
-          We are proud of our work, and we are always looking for new challenges. Take a look at some of our recent portfolio:
+          We are proud of our work, and we are always looking for new
+          challenges. Take a look at some of our recent portfolio:
         </p>
       </div>
-
       {/* Portfolio Grid */}
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {portfolioItems.map((item, index) => (
           <div
             key={index}
-            className="relative group bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="relative group bg-slate-900 hover:bg-slate-950 transition duration-300 ease-in-out rounded-xl group"
           >
-            {/* Image */}
-            <img
-              src={item.image}
-              alt={item.title}
-              className="lg:w-72 w-full h-64 object-cover lg:m-3 lg:rounded-lg"
-            />
-            {/* Content */}
-            <div className="p-4 flex flex-col justify-between">
-              <div>
+            <Link
+              to={item.link}
+              className="block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              {/* Image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-64 object-cover lg:w-72 lg:m-3 lg:rounded-lg"
+              />
+              {/* Content */}
+              <div className="p-4">
                 <span className="text-sm text-gray-400">{item.category}</span>
                 <h6 className="text-2xl font-semibold mt-2">{item.title}</h6>
               </div>
-            </div>
-            {/* Arrow Icon */}
-            <Link
-              to={item.link}
-              className="absolute bottom-4 right-4 p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors"
-            >
-              <BsArrowUpRight size={20} />
+              {/* Arrow Icon */}
+              <div className="absolute bottom-4 right-4 p-3 rounded-full bg-gray-700 group-hover:bg-gray-600 transition-colors">
+                <BsArrowUpRight size={20} />
+              </div>
             </Link>
           </div>
         ))}
@@ -85,7 +85,7 @@ const PortfolioSection = () => {
       {/* Explore All Works Button */}
       <div className="text-center mt-12">
         <Link
-          to="#"
+          to="/portfolio"
           className="inline-flex items-center text-blue-500 hover:underline"
         >
           Explore All Works
